@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: springgreen;
+        }
+        .box{
+            background-color: green;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            /* animation-name: arsh1; */
+            animation-name: arsh2;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+            animation-fill-mode: forwards;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 2s; */
+            animation-direction: reverse;
+
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay
+            animation-iteration-count animation-fill-mode; */
+            animation: arsh 2s ease-in 2s 2 forwards;
+        }
+        @keyframes arsh2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 150px;
+                left: 0px;
+            }
+            75%{
+                top: 150px;
+                left: 150px;
+            }
+            100%{
+                top: 0px;
+                left: 150px;
+            }
+        }
+        @keyframes arsh1{
+            from{
+                width: 150px;
+            }
+            to{
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Hi
+        </div>
+    </div>
+</body>
+</html>

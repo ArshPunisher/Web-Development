@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h2, p{
+            font-family: 'Pacifico', cursive;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid rgb(238, 96, 96);
+            background-color: rgb(169, 255, 255);
+            margin: 33px auto;
+        }
+        .item{
+            border: 3px solid rgb(252, 174, 73);
+            margin: 12px 4px;
+            padding: 12px 4px;
+            background: rgb(255, 220, 177);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #books{
+            float: right;
+            width: 49%;
+        }
+        #glasses{
+            clear: both;
+            width: 99%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h2>Fruits</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia quis totam placeat cumque perspiciatis asperiores! Reprehenderit minus, vero eos, nemo distinctio ad exercitationem odit sint, sunt quia laudantium ut maiores doloremque doloribus.</p>
+        </div>
+        <div id="books" class="item">
+            <h2>Books</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia quis totam placeat cumque perspiciatis asperiores! Reprehenderit minus, vero eos, nemo distinctio ad exercitationem odit sint, sunt quia laudantium ut maiores doloremque doloribus.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h2>Glasses</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia quis totam placeat cumque perspiciatis asperiores! Reprehenderit minus, vero eos, nemo distinctio ad exercitationem odit sint, sunt quia laudantium ut maiores doloremque doloribus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quae quasi aspernatur voluptatem quisquam error asperiores id repudiandae rem, modi officiis laboriosam.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 12px;
+        color: white;
+        border: 2px solid black;
+        background-color: grey;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .container p{
+        font-family: sans-serif;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This is a paragraph</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam at magni illo repudiandae non, facere repellendus ea aspernatur vero optio asperiores quibusdam temporibus nesciunt modi eligendi quasi provident inventore libero? Veniam officiis delectus, suscipit eligendi maiores quasi temporibus perferendis saepe repudiandae sint enim, ea itaque impedit assumenda dignissimos beatae maxime magni quisquam labore. Sapiente aspernatur dolor ipsum libero porro reiciendis quam nam. Ut reiciendis fuga ullam quas voluptatum libero vel tenetur autem fugiat accusamus quidem maxime possimus quod quo deleniti, dolores adipisci obcaecati in iusto facilis ipsam. Quo culpa ea odio veniam dignissimos consequuntur id commodi necessitatibus exercitationem? Id velit quod, quasi ea commodi repudiandae ab eius illo fugit possimus consectetur consequuntur a nisi molestias, nam corrupti. Ut fuga praesentium optio beatae temporibus debitis explicabo! Atque recusandae, facere officiis itaque, odio modi iste cupiditate doloribus nihil amet numquam magnam expedita velit maiores eum explicabo voluptas, repellat temporibus corporis nam quia! Id, facilis accusamus inventore quibusdam eveniet error modi recusandae atque, consequuntur rerum architecto blanditiis, corporis quis voluptatem sapiente saepe. Itaque porro voluptates quae esse atque modi fugiat tempora labore ab deleniti possimus excepturi culpa ad praesentium maiores libero, hic eveniet. Possimus maxime exercitationem blanditiis quam at sit debitis sapiente. Sunt ratione vitae totam dolorem at omnis dolore minima? Quas quasi facilis totam aliquid rerum nemo corporis nesciunt itaque? Illum eveniet harum quis iusto, ut atque illo asperiores deleniti, rerum qui eaque porro fugiat officiis sit. Nihil, voluptas! Impedit blanditiis repellat fugit asperiores sapiente rem exercitationem in voluptate eaque, maiores quam expedita ullam itaque similique mollitia velit dolor explicabo dolores animi molestias! Eaque, recusandae nesciunt eligendi culpa, sit vitae quia, tempora ad reiciendis delectus quo illo perferendis esse fugiat maxime quod molestias vel consequuntur explicabo odit libero iste velit fugit consequatur. Minima cupiditate suscipit aspernatur dolor natus laboriosam excepturi alias repellendus, ipsam magni perspiciatis pariatur exercitationem, blanditiis ipsum! Beatae cupiditate est iusto eum, labore dolorem provident eaque impedit voluptas, officia explicabo ea quod eius enim quo? Dolor mollitia quam consequatur rem. Quis, repellendus consequatur</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log("Mouse inside");
+        })
+
+        para.addEventListener('mouseout', function run(){
+            console.log("Mouse Outside the para");
+        })
+        function toggleHide(){
+
+            let para = document.getElementById('para');
+            let btn = document.getElementById('btn');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

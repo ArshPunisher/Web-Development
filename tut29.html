@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout & ClearTimeout</title>
+</head>
+<body>
+    <div>
+        The time is <span id="time"></span>
+    </div>
+    <script>
+        function greet(name, bye){
+            console.log("Hello Good Morning " + name + " " + bye);
+        }
+        // timeout = setTimeout(greet, 5000, "Arsh", "Take Care");
+        // clearTimeout(timeout);
+
+        // intervalId = setInterval(greet, 2000, "Arsh", "Wasup");
+        // clearInterval(intervalId)
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 100);
+    </script>
+</body>
+</html>

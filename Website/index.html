@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsh Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .left {
+        /* border: 3px solid red; */
+        position: absolute;
+        top: 20px;
+        left: 14px;
+        height: 93px;
+        display: inline-block;
+        color: white;
+        width: 132px;
+    }
+
+    .left img {
+        padding: 0px 0px 0px 27px;
+        width: 78px;
+    }
+
+    .left div {
+        color: white;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        font-weight: bold;
+        line-height: 0px;
+    }
+
+    .mid {
+        /* border: 3px solid yellow; */
+        display: block;
+        margin: 30px auto;
+        width: 40%;
+        color: white;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+        font-size: 17px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .right {
+        /* border: 3px solid yellowgreen; */
+        position: absolute;
+        top: 20px;
+        right: 14px;
+        display: inline-block;
+        color: white;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        color: white;
+        /* border: 2x solid white; */
+        border-radius: 8px;
+        font-size: 15px;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(49, 48, 48);
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 26px;
+        margin: 114px 85px;
+        padding: 24px 80px;
+        width: 22%;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }
+    .form-php input{
+        text-align: center;
+        padding: 5px;
+        display: block;
+        width: 285px;
+        margin: 2px auto;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 15px;
+        font-family: 'Acme', sans-serif;
+    }
+    .container button{
+        display: block;
+        width: 298px;
+        margin: 20px auto;
+        font-family: 'Acme', sans-serif;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Arsh Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Login</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now And Get upto 60% Discount</h1>
+        <form action="noaction.php">
+            <div class="form-php">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-php">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-php">
+                <input type="text" name="" placeholder="Enter your City">
+            </div>
+            <div class="form-php">
+                <input type="text" name="" placeholder="Enter your Mobile number">
+            </div>
+            <div class="form-php">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

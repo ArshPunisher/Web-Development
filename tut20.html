@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            background-color: rgb(175, 225, 231);
+            margin: 12px;
+            padding: 10px;
+            /* box-shadow: 7px 9px greenyellow; */
+            /* box-shadow: -7px -9px greenyellow; */
+            /* box-shadow: 7px 9px 10px greenyellow; */
+            /* box-shadow: 7px 9px 10px 6px greenyellow; */
+            /* box-shadow: inset -7px -9px 10px greenyellow; */
+            box-shadow: 7px 9px 10px 6px rgba(214, 8, 8, 0.5);
+            box-shadow: 6px 7px 8px chartreuse;   
+            border-radius: 10px;        
+        }
+        h1{
+            text-shadow: 2px 2px 1px crimson;
+            font-family: 'Dancing Script', cursive;
+        }
+        p{
+            color: black;
+            /* font-weight: bold; */
+            font-family: 'Pacifico', cursive;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h1>Card-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum impedit magni sit placeat minus explicabo? Voluptatem dolores, fugiat fuga numquam id est optio dolore fugit distinctio suscipit magni maiores sequi? Illo accusamus ab tempore vitae, provident, vero alias officiis, eius quos aliquid repellat.</p>
+        </div>       
+        <div class="box" id="box-2">
+            <h1>Card-2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugiat officiis, temporibus unde aliquam doloremque harum a facilis aliquid necessitatibus omnis cumque velit sapiente aut accusamus ipsam reiciendis dolorum. Assumenda facilis nemo obcaecati quia nobis praesentium.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h1>Card-3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, consequuntur perferendis dolore ducimus ipsam iste, necessitatibus tempora id similique maiores facilis minus. Nihil, repudiandae harum enim nemo aliquid ex autem non iste sit, explicabo quo assumenda placeat dolor iusto iure odio atque pariatur! Maiores, aut.</p>
+        </div>
+    </div>
+</body>
+</html>
